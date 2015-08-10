@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/.tmp/styles/main.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/README.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/elements/elements.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/elements/my-cv-done/my-cv-done.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/elements/my-cv/my-cv.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/elements/my-greeting/my-greeting.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/elements/routing.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/Controllers/cvController.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/Controllers/greetController.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/Controllers/modelController.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/Factories/EntityFactory.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/Services/entityStore.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/Services/modelDefinitions-pre.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/Services/modelDefinitions.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/Services/socketService.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/angularModule.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/app.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/customElementBindings.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/helpers.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/index-pre.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/index.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/srv/index.html" charset="UTF-8" />
   </component>

@@ -1,0 +1,112 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<dom-module id="my-cv-done">
+  <style>
+    :host {
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      h1.paper-font-display1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+  <template>
+
+    <paper-tabs selected="{{selected}}">
+      <template is="dom-repeat" items="{{cvSections}}">
+        <paper-tab on-click="changeSection">{{item}}</paper-tab>
+      </template>
+    </paper-tabs>
+
+    </div>
+
+    <template is="dom-if" if="{{!isArray(section)}}">
+      <template is="dom-repeat" items="{{sectionItems(section)}}">
+        <template is="dom-if" if="{{!isArray(section,item.title)}}">
+          <h2>{{item.title}}</h2>
+          <h3>{{item.value}}</h3>
+        </template>
+        <template is="dom-if" if="{{isArray(section,item.title)}}">
+          <h2>{{item.title}}</h2>
+          <ul>
+            <template is="dom-repeat" items="{{item.value}}" as="subItem">
+              <li>{{subItem}}</li>
+            </template>
+          </ul>
+        </template>
+      </template>
+    </template>
+
+    <template is="dom-if" if="{{isArray(section)}}">
+      <ul>
+        <template is="dom-repeat" items="{{getSection(section)}}">
+          <li>{{item}}</li>
+        </template>
+      </ul>
+    </template>
+
+  </template>
+
+  <script>
+    (function() {
+      Polymer({
+        is: 'my-cv-done',
+
+        properties: {
+          cv: Object,
+          section: {
+            type: String,
+            notify: true,
+            value:"base"
+          },
+          cvSections: []
+        },
+        observers: [
+          'cvChanged(cv)'
+        ],
+        cvChanged: function(change) {
+          var me= this;
+          var old = me.get('section');
+          me.set('section', old);
+          me.set('cvSections',Object.getOwnPropertyNames(change).slice(15));
+        },
+        getSection: function(section) {
+          var cv = this.get('cv');
+          if(cv && cv[section])
+            return cv[section];
+          return {};
+        },
+        changeSection: function(e) {
+          this.set('section', e.model.item);
+        },
+        isArray: function(section, item) {
+          if(item)
+            return Array.isArray(this.getSection(section)[item]);
+          else
+            return Array.isArray(this.getSection(section));
+          //
+        },
+        sectionItems: function(section) {
+          var sectionItems = this.getSection(section);
+          var itemNames = Object.getOwnPropertyNames(sectionItems);
+          var returnObject = [];
+          itemNames.forEach(function(name) {
+            returnObject.push({title: name, value: sectionItems[name]});
+          });
+          return returnObject;
+        }
+      });
+    })();
+  </script>
+
+</dom-module>

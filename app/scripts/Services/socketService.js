@@ -3,7 +3,7 @@
  */
 (function() {
   ngApp.factory('socketService', [function () {
-    var socket = io("http://localhost:3100");
+    var socket = io("http://"+window.location.hostname+":3100");
     socket.on('fn', function (body) {
       var fnName = body.fn;
       if (typeof myStore.fns[fnName] == 'function') {

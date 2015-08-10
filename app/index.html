@@ -51,7 +51,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <!-- endbuild -->
   <script src="scripts/helpers.js"></script>
 
-  <script src="http://localhost:3100/socket.io/socket.io.js"></script>
+  <script type="text/javascript">
+    var fileref=document.createElement('script')
+    fileref.setAttribute("type","text/javascript")
+    fileref.setAttribute("src", "http://"+window.location.hostname + ":3100/socket.io/socket.io.js");
+    document.getElementsByTagName("head")[0].appendChild(fileref);
+  </script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/ng-polymer-elements/ng-polymer-elements.js"></script>
   <script src="scripts/customElementBindings.js"></script>
@@ -62,6 +67,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <script src="scripts/Services/entityStore.js"></script>
   <script src="scripts/Controllers/greetController.js"></script>
   <script src="scripts/Controllers/modelController.js"></script>
+  <script src="scripts/Controllers/cvController.js"></script>
   <!-- will be replaced with elements/elements.vulcanized.html -->
   <link rel="import" href="elements/elements.html">
   <!-- endreplace-->
@@ -87,9 +93,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <span>Home</span>
           </a>
 
-          <a data-route="users" href="/users">
+          <a data-route="people" href="/people">
             <iron-icon icon="info"></iron-icon>
-            <span>Users</span>
+            <span>People</span>
           </a>
 
           <a data-route="contact" href="/contact">
@@ -163,20 +169,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
             </section>
 
-            <section data-route="users">
+            <section data-route="people">
               <paper-material elevation="1">
-                <h2 class="paper-font-display2">Users</h2>
-                <p>This is the users section</p>
-                <a href="/users/Rob">Rob</a>
+                <h2 class="paper-font-display2">People</h2>
+                <a href="/people/Peter">Peter</a>
               </paper-material>
             </section>
 
-            <section data-route="user-info">
-              <paper-material elevation="1">
-                <h2 class="paper-font-display2">
-                User:<span>{{params.name}}</span>
-                </h2>
-                <div>This is <span>{{params.name}}</span>'s section</div>
+            <section data-route="person-cv">
+              <paper-material elevation="1" ng-controller="cvController">
+                <my-cv-done ng-cv="angularValue" section="{{params.section}}"></my-cv-done>
+                <div ng-show="edit">
+                  <textarea class="jsonEditor" ng-model="editValue"></textarea>
+                  <button ng-click="saveResume()">Save This</button>
+                </div>
+                <span ng-click="edit = !edit" style="float:right;">Edit</span>
               </paper-material>
             </section>
 

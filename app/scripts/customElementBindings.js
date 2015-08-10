@@ -8,6 +8,9 @@
     },
     myList: {
       ngItems: '=items'
+    },
+    myCvDone: {
+      ngCv: '=cv'
     }
   });
 })();
