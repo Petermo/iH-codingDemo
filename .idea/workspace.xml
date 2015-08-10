@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="259ac900-0ebf-45cd-948a-997eab9e17d4" name="Default" comment="Update readme">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/copyPaste.txt" />
-      <change type="DELETED" beforePath="E:\Devel\iH-codingDemo\index-pre.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/customElementBindings.js" afterPath="$PROJECT_DIR$/app/scripts/customElementBindings.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/Controllers/cvController.js" afterPath="$PROJECT_DIR$/app/scripts/Controllers/cvController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/elements/elements.html" afterPath="$PROJECT_DIR$/app/elements/elements.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/Services/modelDefinitions.js" afterPath="$PROJECT_DIR$/app/scripts/Services/modelDefinitions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/elements/my-cv-done/my-cv-done.html" afterPath="$PROJECT_DIR$/app/elements/my-cv-done/my-cv-done.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\Devel\iH-codingDemo\app\scripts\Services\modelDefinitions-pre.js" afterPath="$PROJECT_DIR$/app/scripts/Services/modelDefinitions-done.js" />
     </list>
     <ignored path="iH-codingDemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0545454">
-              <caret line="173" column="59" selection-start-line="173" selection-start-column="59" selection-end-line="173" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.4129747">
+              <caret line="121" column="45" selection-start-line="121" selection-start-column="45" selection-end-line="121" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#paper-material#0;n#section#2;n#iron-pages#0;n#div#0;n#paper-scroll-header-panel#1;n#paper-drawer-panel#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -109,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customElementBindings.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="customElementBindings.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/customElementBindings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4206696">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
@@ -202,10 +192,10 @@
         <option value="$PROJECT_DIR$/app/elements/elements.html" />
         <option value="$PROJECT_DIR$/app/scripts/Services/modelDefinitions-done.js" />
         <option value="$PROJECT_DIR$/app/scripts/Services/modelDefinitions.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/scripts/Controllers/cvController.js" />
         <option value="$PROJECT_DIR$/copyPaste.txt" />
         <option value="$PROJECT_DIR$/app/scripts/customElementBindings.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
       </list>
     </option>
   </component>
@@ -715,7 +705,7 @@
       <workItem from="1439127641769" duration="728000" />
       <workItem from="1439129878724" duration="4571000" />
       <workItem from="1439135236523" duration="15630000" />
-      <workItem from="1439184736443" duration="19637000" />
+      <workItem from="1439184736443" duration="19749000" />
     </task>
     <task id="LOCAL-00001" summary="Update readme">
       <created>1439191682914</created>
@@ -727,7 +717,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45274000" />
+    <option name="totallyTimeSpent" value="45386000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -1140,16 +1130,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0545454">
-          <caret line="173" column="59" selection-start-line="173" selection-start-column="59" selection-end-line="173" selection-end-column="59" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#paper-material#0;n#section#2;n#iron-pages#0;n#div#0;n#paper-scroll-header-panel#1;n#paper-drawer-panel#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/Controllers/cvController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1200,10 +1180,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/customElementBindings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4206696">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4129747">
+          <caret line="121" column="45" selection-start-line="121" selection-start-column="45" selection-end-line="121" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#paper-material#0;n#section#2;n#iron-pages#0;n#div#0;n#paper-scroll-header-panel#1;n#paper-drawer-panel#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
