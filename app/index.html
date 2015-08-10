@@ -139,7 +139,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
                 <p class="paper-font-subhead">You now have:</p>
                 <ng-ctr ng-controller="modelController">
-                <my-list ng-items="items"></my-list>
+                  <my-list ng-items="items"></my-list>
                 </ng-ctr>
 
                 <p class="paper-font-body2">Looking for more Web App layouts? Check out our <a href="https://github.com/PolymerElements/app-layout-templates">layouts</a> collection. You can also <a href="http://polymerelements.github.io/app-layout-templates/">preview</a> them live.</p>
@@ -178,7 +178,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
             <section data-route="person-cv">
               <paper-material elevation="1" ng-controller="cvController">
-                <my-cv-done ng-cv="angularValue" section="{{params.section}}"></my-cv-done>
+                <my-cv ng-cv="angularValue" section="{{params.section}}"></my-cv>
                 <div ng-show="edit">
                   <textarea class="jsonEditor" ng-model="editValue"></textarea>
                   <button ng-click="saveResume()">Save This</button>

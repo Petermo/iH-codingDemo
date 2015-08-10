@@ -1,0 +1,13 @@
+##
+1. Update definition
+2. Load data
+    ,"other":{"Languages":["English","French","German"],"Other interests and skills":["Film editing","Open source development","Android development","Matlab"],"Hobbies":["Sailing","Cooking","Photography","Cycling","Drinking beer (with others ;))","Waterpolo (if my knee permits it)","Skiing (see above)"]}
+3. Add paper-tabs
+4. Change changeSection method to include
+    this.set('cvSubSections',Object.getOwnPropertyNames(this.getSection(e.model.item)));
+5. Add restrictions
+6. Update getSection to accept dots
+
+
+# angular binding
+#

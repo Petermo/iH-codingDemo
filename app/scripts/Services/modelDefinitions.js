@@ -34,7 +34,7 @@
           }
         },
         getTypes: function() {
-          return ["Entity", "TextValue"];
+          return ["Entity", "TextValue", "CV"];
         }
       }
   }]);

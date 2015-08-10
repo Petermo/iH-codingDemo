@@ -11,6 +11,9 @@
     },
     myCvDone: {
       ngCv: '=cv'
+    },
+    myCv: {
+      ngCv: '=cv'
     }
   });
 })();

@@ -22,9 +22,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   </style>
   <template>
 
-    <paper-tabs selected="{{selected}}">
+    <paper-tabs>
       <template is="dom-repeat" items="{{cvSections}}">
         <paper-tab on-click="changeSection">{{item}}</paper-tab>
+      </template>
+    </paper-tabs>
+    <paper-tabs>
+      <template is="dom-repeat" items="{{cvSubSections}}">
+        <paper-tab on-click="changeSubSection">{{item}}</paper-tab>
       </template>
     </paper-tabs>
 
@@ -82,12 +87,37 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         },
         getSection: function(section) {
           var cv = this.get('cv');
-          if(cv && cv[section])
+          if(cv && section.indexOf(".") == -1 && cv[section])
             return cv[section];
+          else if(cv && section.indexOf(".") > 0)
+          {
+            var subsection = section.substring(section.indexOf(".")+1);
+            var section = section.substring(0,section.indexOf("."));
+            if(cv[section][subsection])
+              return cv[section][subsection];
+          }
           return {};
         },
         changeSection: function(e) {
           this.set('section', e.model.item);
+          var section = this.getSection(e.model.item)
+          if(Array.isArray(section) || Object.getOwnPropertyNames(section).length <= 1) {
+            this.set('cvSubSections', []);
+            return;
+          }
+          this.set('cvSubSections',Object.getOwnPropertyNames(section));
+        },
+        changeSubSection: function(subsectionEvent) {
+          var subsection = subsectionEvent.model.item;
+          var section = this.get('section');
+          var dotIdx = section.indexOf(".");
+          if(dotIdx == -1)
+            section += "."+subsection;
+          else if(dotIdx>0)
+          {
+            section = section.substring(0,dotIdx+1) + subsection;
+          }
+          this.set('section',section);
         },
         isArray: function(section, item) {
           if(item)

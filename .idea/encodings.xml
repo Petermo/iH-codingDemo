@@ -13,13 +13,14 @@
     <file url="file://$PROJECT_DIR$/app/scripts/Controllers/modelController.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/Factories/EntityFactory.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/Services/entityStore.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/scripts/Services/modelDefinitions-pre.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/Services/modelDefinitions-done.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/Services/modelDefinitions.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/Services/socketService.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/angularModule.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/app.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/customElementBindings.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/helpers.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/copyPaste.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/index-pre.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/index.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/srv/index.html" charset="UTF-8" />

@@ -27,6 +27,7 @@
               cv.base = { type: Object };
               cv.personalia = { type: Object };
               cv.workhistory = { type: Object };
+              cv.other = { type: Object };
               return cv;
               break;
             default:
@@ -34,7 +35,7 @@
           }
         },
         getTypes: function() {
-          return ["Entity", "TextValue"];
+          return ["Entity", "TextValue", "CV"];
         }
       }
   }]);

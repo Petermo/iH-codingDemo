@@ -9,7 +9,7 @@
 
     $scope.edit = false;
     $scope.$watch('edit',function(){
-      $scope.editValue = JSON.stringify({workhistory: cvObject.workhistory, base: cvObject.base, personalia: cvObject.personalia});
+      $scope.editValue = JSON.stringify({workhistory: cvObject.workhistory, base: cvObject.base, personalia: cvObject.personalia, other: cvObject.other});
     });
 
     $scope.saveResume = function() {
